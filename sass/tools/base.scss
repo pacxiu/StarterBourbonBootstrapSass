@@ -1,8 +1,21 @@
 *{
   font-family: 'Open Sans', sans-serif;
+  color: $font-color
 }
 
+html, body {
+  position: relative;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  color: $font-color;
+}
 
-h1{
-  border: 1px solid yellow;
+a, a:hover, a:active, a:visited, a:focus{
+  text-decoration: none;
+}
+
+p {
+  padding: 0px;
+  margin: 0px;
 }
