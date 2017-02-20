@@ -23,15 +23,17 @@ gulp.task('styles', function () {
 });
 
  //task for browser sync
- gulp.task('serve',  function () {
-   browserSync.init({
-      server: {
-        baseDir: './'
-      }
-    });
+gulp.task('serve',  function () {
 
-gulp.watch('./sass/**', ['styles']);
-gulp.watch('./ejs/**', ['ejs']);
+   // without localsync just comment browserSync.init
+    // browserSync.init({
+    //    server: {
+    //      baseDir: './'
+    //    }
+    //  });
+
+  gulp.watch('./sass/**', ['styles']);
+  gulp.watch('./ejs/**', ['ejs']);
 
 });
 
